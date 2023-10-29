@@ -84,11 +84,11 @@ const Share = ({ config }: ShareProps) => {
   useEffect(() => {
     if (shareCount !== 0) {
       window.Kakao.Share.createDefaultButton({
-        objectType: 'feed',
-        container: '#sendKakao',
+        objectType: "feed",
+        container: "#sendKakao",
         content: {
           title: `${config.groom.name}❤${config.bride.name} 결혼식에 초대합니다`,
-          description: "아래의 '청첩장 열기' 버튼을 눌러 읽어주세요🤵👰",
+          description: "아래의 '청첩장 열기' 버튼을 눌러 읽어주세요🤵‍♂️👰‍♀️",
           imageUrl: config.kakaoImage,
           link: {
             mobileWebUrl: config.url,
@@ -97,7 +97,7 @@ const Share = ({ config }: ShareProps) => {
         },
         buttons: [
           {
-            title: '청첩장 열기',
+            title: "청첩장 열기",
             link: {
               mobileWebUrl: config.url,
               webUrl: config.url,
