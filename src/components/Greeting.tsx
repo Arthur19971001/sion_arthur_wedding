@@ -7,13 +7,13 @@ const isPortrait = window.matchMedia("(orientation: portrait)").matches;
 
 const Layout = styled("div", {
   width: "100%",
-  padding: isPortrait ? "15% 0% 15% 5%" : "5% 0% 5% 10%",
+  padding: isPortrait ? "15% 0% 15% 0%" : "5% 0% 5% 0%",
 });
 
 const Title = styled("p", {
   color: "#795548",
   width: "100%",
-  fontSize: isPortrait ? "2.5em" : "3.5em",
+  fontSize: isPortrait ? "2.3em" : "3.5em",
   margin: 0,
   fontWeight: "500",
   textAlign: "center",
@@ -49,7 +49,7 @@ const Greeting = ({ config }: GreetingProps) => {
     <section
       ref={ref}
       style={{
-        height: "60vh",
+        height: "65vh",
         background: onScreen ? "#EFEBE9" : "#DADADA",
         overflow: "hidden",
         position: "relative",
@@ -60,19 +60,26 @@ const Greeting = ({ config }: GreetingProps) => {
         <Title>결혼합니다</Title>
         <SubTitle>
           <span>
-            서로 다른 두 사람이 만나 함께 <ExclamationMarkTitle>성</ExclamationMarkTitle>장해 가려고 합니다.
+            서로 다른 두 사람이 만나 함께{" "}
+            <ExclamationMarkTitle>성</ExclamationMarkTitle>장해 가려고 합니다.
           </span>
           <br />
-          서로의 존<ExclamationMarkTitle>재</ExclamationMarkTitle>가 가장 큰 힘이 되어 주겠습니다.
+          서로의 존<ExclamationMarkTitle>재</ExclamationMarkTitle>가 가장 큰
+          힘이 되어 주겠습니다.
           <br />
-          함께하는 모든 <ExclamationMarkTitle>시</ExclamationMarkTitle>간 모든 순간
+          함께하는 모든 <ExclamationMarkTitle>시</ExclamationMarkTitle>간 모든
+          순간
           <br />
-          <ExclamationMarkTitle>온</ExclamationMarkTitle> 마음을 다해 사랑하며 살겠습니다.
+          <ExclamationMarkTitle>온</ExclamationMarkTitle> 마음을 다해 사랑하며
+          살겠습니다.
           <br />
           <br />
           다름이 귀한 채움이 될 수 있게 살겠습니다.
           <br />
-          시간이 흐를수록 깊어질 저희의 약속을 함께 축복해 주세요
+          시간이 흐를수록 깊어질 저희의 약속을
+          <br />
+          함께 축복해 주세요
+          <br />
           <br />
           <br />
           {config.groom.fatherName} · {config.groom.motherName}의 아들{" "}

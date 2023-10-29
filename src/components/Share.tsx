@@ -27,7 +27,7 @@ const Layout = styled('div', {
 const Title = styled('p', {
   color: '#795548',
   width: '100%',
-  fontSize: isPortrait ? '2.5em' : '3.5em',
+  fontSize: isPortrait ? '2.3em' : '3.5em',
   margin: 0,
   fontWeight: '500',
 });
@@ -35,7 +35,7 @@ const Title = styled('p', {
 const ButtonGroup = styled('div', {
   width: '100%',
   textAlign: 'center',
-  paddingBottom: isPortrait ? '10%' : '5%',
+  paddingBottom: isPortrait ? '15%' : '5%',
 });
 
 const KakaoTalkShareButton = styled(Button, {

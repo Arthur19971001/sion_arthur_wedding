@@ -16,7 +16,7 @@ const Layout = styled("div", {
 const Title = styled("p", {
   color: "#FFFFFF",
   width: "100%",
-  fontSize: isPortrait ? "2.5em" : "3.5em",
+  fontSize: isPortrait ? "2.3em" : "3.5em",
   margin: 0,
   fontWeight: "500",
 });
@@ -35,7 +35,7 @@ const Gallery = ({ config }: GalleryProps) => {
     <section
       ref={ref}
       style={{
-        height: "100vh",
+        height: "90vh",
         background: onScreen ? "#D5D6CC" : "#EFEBE9",
         overflow: "hidden",
         position: "relative",

@@ -30,18 +30,15 @@ const TitleLayout = styled('p', {
 
 const SubTitleLayout = styled('p', {
   width: '100%',
-  fontSize: isPortrait ? '1.5em' : '2em',
+  fontSize: isPortrait ? '1.3em' : '2em',
   margin: '24px 0',
   fontWeight: '300',
-  fontFamily: 'Dancing Script',
+  // fontFamily: 'Dancing Script',
 });
 
 const ImageLayout = styled('div', {
   width: '100%',
   background: '#DADADA',
-  bottom: '-5px',
-  textAlign: 'center',
-  position: 'absolute',
 });
 
 const Image = styled('img', {
