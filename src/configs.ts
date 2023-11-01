@@ -28,9 +28,11 @@ const Configs: ConfigsType = {
     name: '김성재',
     accountNumber: '03-1504-0023569-00',
     fatherName: '김희중',
-    fatherAccountNumber: '03-1504-0023569-00',
+    fatherAccountNumber: '048-21-0840-395',
+    fatherKrAccountNumber: '국민은행 048-21-0840-395',
     motherName: '정영임',
-    motherAccountNumber: '03-1504-0023569-00',
+    motherAccountNumber: '048-139485-02-013',
+    motherKrAccountNumber: '우리은행 048-139485-02-013',
   },
   bride: {
     name: '이시온',
@@ -61,7 +63,7 @@ const Configs: ConfigsType = {
     GalleryPhoto18,
   ],
   musicSrc: './resources/background.mp3',
-  formUrl: 'https://docs.google.com/forms/d/1x-zC5TY1si4DRwAJWQ8BadvBYnisGg7buuxAg8aUXso/edit',
+  formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSehMXA9sY-m3uIzN_STAJYz3ef-XRi-U1bwvUPsqLU-g8Nv-w/viewform',
 };
 
 export type ConfigsType = {
@@ -84,8 +86,10 @@ type Person = {
   accountNumber: string;
   fatherName?: string;
   fatherAccountNumber?: string;
+  fatherKrAccountNumber?: string;
   motherName?: string;
   motherAccountNumber?: string;
+  motherKrAccountNumber?: string;
 };
 
 export default Configs;

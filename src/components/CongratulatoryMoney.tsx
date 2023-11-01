@@ -86,7 +86,7 @@ const CongratulatoryMoney = ({ config }: CongratulatoryMoneyProps) => {
           </Description>,
         ]}
       >
-        <div>
+        <div style={{ alignContent: ''}}>
           <b>부) {config.groom.fatherName}</b>
           <Divider type="vertical" />
           <CopyToClipboard text={config.groom.fatherAccountNumber || ""}>
@@ -95,7 +95,7 @@ const CongratulatoryMoney = ({ config }: CongratulatoryMoneyProps) => {
               style={{ padding: 0, margin: 0 }}
               onClick={() => message.success("계좌번호가 복사되었습니다.")}
             >
-              {config.groom.fatherAccountNumber || ""}
+              {config.groom.fatherKrAccountNumber || ""}
             </Button>
           </CopyToClipboard>
         </div>
@@ -108,7 +108,7 @@ const CongratulatoryMoney = ({ config }: CongratulatoryMoneyProps) => {
               style={{ padding: 0, margin: 0 }}
               onClick={() => message.success("계좌번호가 복사되었습니다.")}
             >
-              {config.groom.motherAccountNumber || ""}
+              {config.groom.motherKrAccountNumber || ""}
             </Button>
           </CopyToClipboard>
         </div>
